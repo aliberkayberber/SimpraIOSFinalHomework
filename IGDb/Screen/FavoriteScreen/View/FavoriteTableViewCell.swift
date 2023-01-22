@@ -20,7 +20,7 @@ class FavoriteTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         favoriteImage.layer.cornerRadius = 7.5
-    
+        
     }
 
     override func prepareForReuse() {
