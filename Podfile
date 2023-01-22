@@ -7,5 +7,5 @@ target 'IGDb' do
 
   pod 'Alamofire'
   pod 'Kingfisher'
-
+  pod 'UIImageColors'
 end

@@ -32,6 +32,8 @@
 		DD6809122979D7E70019D76D /* FavoriteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6809102979D7E70019D76D /* FavoriteTableViewCell.swift */; };
 		DD6809132979D7E70019D76D /* FavoriteTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD6809112979D7E70019D76D /* FavoriteTableViewCell.xib */; };
 		DD8A918029749C450020A361 /* PinterestLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8A917F29749C450020A361 /* PinterestLayout.swift */; };
+		DDA997B7297D6A40000ABDDE /* GameDetailScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA997B6297D6A40000ABDDE /* GameDetailScreenViewController.swift */; };
+		DDA997B9297DA4EF000ABDDE /* NoteDetailScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA997B8297DA4EF000ABDDE /* NoteDetailScreenViewModel.swift */; };
 		DDABBC8F297BFD43002F559C /* FavoriteScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDABBC8E297BFD43002F559C /* FavoriteScreenViewController.swift */; };
 		DDABBC91297C1F86002F559C /* LocalDataBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDABBC90297C1F86002F559C /* LocalDataBase.swift */; };
 		DDABBC93297C6A1C002F559C /* GameDetailScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDABBC92297C6A1C002F559C /* GameDetailScreenViewModel.swift */; };
@@ -73,6 +75,8 @@
 		DD6809102979D7E70019D76D /* FavoriteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteTableViewCell.swift; sourceTree = "<group>"; };
 		DD6809112979D7E70019D76D /* FavoriteTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoriteTableViewCell.xib; sourceTree = "<group>"; };
 		DD8A917F29749C450020A361 /* PinterestLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinterestLayout.swift; sourceTree = "<group>"; };
+		DDA997B6297D6A40000ABDDE /* GameDetailScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDetailScreenViewController.swift; sourceTree = "<group>"; };
+		DDA997B8297DA4EF000ABDDE /* NoteDetailScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteDetailScreenViewModel.swift; sourceTree = "<group>"; };
 		DDABBC8E297BFD43002F559C /* FavoriteScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteScreenViewController.swift; sourceTree = "<group>"; };
 		DDABBC90297C1F86002F559C /* LocalDataBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalDataBase.swift; sourceTree = "<group>"; };
 		DDABBC92297C6A1C002F559C /* GameDetailScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDetailScreenViewModel.swift; sourceTree = "<group>"; };
@@ -276,6 +280,7 @@
 		DD4AC02A297306500002FDA1 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				DDA997B8297DA4EF000ABDDE /* NoteDetailScreenViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -298,6 +303,7 @@
 		DD4AC02D297306720002FDA1 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				DDA997B6297D6A40000ABDDE /* GameDetailScreenViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -527,6 +533,7 @@
 				DD4AC00A297301260002FDA1 /* SceneDelegate.swift in Sources */,
 				DD4AC05629745D300002FDA1 /* AlertWidget.swift in Sources */,
 				DD4AC0502974463D0002FDA1 /* DetailModel.swift in Sources */,
+				DDA997B9297DA4EF000ABDDE /* NoteDetailScreenViewModel.swift in Sources */,
 				DD344869297724BC00177CD4 /* SearchScreenViewController.swift in Sources */,
 				DDABBC9B297C756F002F559C /* NoteScreenViewController.swift in Sources */,
 				DD34486F2977464100177CD4 /* NoteDetailScreenViewController.swift in Sources */,
@@ -539,6 +546,7 @@
 				DD6809122979D7E70019D76D /* FavoriteTableViewCell.swift in Sources */,
 				DD8A918029749C450020A361 /* PinterestLayout.swift in Sources */,
 				DD4AC04C297445910002FDA1 /* Network.swift in Sources */,
+				DDA997B7297D6A40000ABDDE /* GameDetailScreenViewController.swift in Sources */,
 				DD4AC0522974477D0002FDA1 /* ModelResponse.swift in Sources */,
 				DD4AC049297369CC0002FDA1 /* HomeScreenCollectionViewCell.swift in Sources */,
 				DDABBC93297C6A1C002F559C /* GameDetailScreenViewModel.swift in Sources */,

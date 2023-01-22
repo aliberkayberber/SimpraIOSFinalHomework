@@ -64,6 +64,24 @@ final class FavoriteCoreData {
         }
     }
     
+    func isFavorite(_ id:Int) -> Bool? {
+        let fetchRequest: NSFetchRequest<Favorite>
+        fetchRequest = Favorite.fetchRequest()
+        
+        fetchRequest.predicate = NSPredicate(format: "gameId = %d", id)
+        
+        do {
+            let objects = try managedContext.fetch(fetchRequest)
+            if objects.count > 0 {
+                return true
+            }
+            return false
+        } catch let error as NSError {
+            return nil
+        }
+        
+    }
+    
     func deleteFavoriteAndId(id: Int) -> Bool? {
         let getRequest: NSFetchRequest<Favorite>
         getRequest = Favorite.fetchRequest()
