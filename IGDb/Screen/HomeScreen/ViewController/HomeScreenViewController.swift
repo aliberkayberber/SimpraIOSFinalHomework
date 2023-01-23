@@ -10,12 +10,14 @@ import AVFoundation
 
 class HomeScreenViewController: UIViewController {
 
+    weak var delegateDetailNote: NoteDetailScreenViewController?
+    
     @IBOutlet weak var homeCollectionView: UICollectionView!
     
     @IBOutlet weak var waitingIndicator: UIActivityIndicatorView!
     
     private var viewModel: HomeScreenViewModelProtocol = HomeScreenViewModel()
-    
+    var sender: Int?
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -35,6 +37,27 @@ class HomeScreenViewController: UIViewController {
 
 extension HomeScreenViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if let sender {
+            switch sender {
+            case 1:
+                delegateDetailNote?.setGame(game: viewModel.getGame(at: indexPath.row))
+                let desitinationVC = storyboard?.instantiateViewController(withIdentifier: "NoteDetailVC") as? NoteDetailScreenViewController
+               
+                desitinationVC?.game = viewModel.getGame(at: indexPath.row)
+                navigationController?.pushViewController(desitinationVC!, animated: true)
+                dismiss(animated: true)
+            default:
+                return
+            }
+
+        }
+        if let gameID = viewModel.getGameId(at: indexPath.row) {
+            // MARK :
+            let destinationVC = storyboard?.instantiateViewController(withIdentifier: "GameDetailVC") as? GameDetailScreenViewController
+            destinationVC?.gameId = gameID
+            self.navigationController?.pushViewController(destinationVC!, animated: true)
+        }
+        /*
         let vc = UIStoryboard(name: "Main", bundle: nil)
         let destinationVC = storyboard?.instantiateViewController(withIdentifier: "GameDetailVC") as! GameDetailScreenViewController
         destinationVC.modalTransitionStyle = .crossDissolve
@@ -42,7 +65,7 @@ extension HomeScreenViewController: UICollectionViewDelegate {
         let gameId = viewModel.getGameId(at: indexPath.row)
         destinationVC.gameId = viewModel.getGameId(at: indexPath.row)
         self.present(destinationVC, animated: true)
-
+*/
     }
 }
 extension HomeScreenViewController: UICollectionViewDelegateFlowLayout {

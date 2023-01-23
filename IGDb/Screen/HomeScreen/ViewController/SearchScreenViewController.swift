@@ -16,7 +16,7 @@ class SearchScreenViewController: UIViewController {
     
     @IBOutlet weak var searchIndicator: UIActivityIndicatorView!
     
-    let searchController = UISearchController()
+    var searchController = UISearchController()
     
     
     @IBOutlet weak var searchText: UILabel! {
@@ -97,6 +97,7 @@ extension SearchScreenViewController: UITableViewDelegate , UITableViewDataSourc
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+      /*
         if let sender {
             switch sender {
             case 1:
@@ -107,6 +108,7 @@ extension SearchScreenViewController: UITableViewDelegate , UITableViewDataSourc
             }
 
         }
+       */
         if let gameID = viewModel.getGameId(at: indexPath.row) {
             // MARK :
             let destinationVC = storyboard?.instantiateViewController(withIdentifier: "GameDetailVC") as? GameDetailScreenViewController
@@ -135,6 +137,6 @@ extension SearchScreenViewController: UISearchResultsUpdating {
       viewModel.searchGames(text)
       print(text)
       self.searchListTableView.reloadData()
-      self.view.endEditing(true)
+      self.view.endEditing(true) 
   }
 }

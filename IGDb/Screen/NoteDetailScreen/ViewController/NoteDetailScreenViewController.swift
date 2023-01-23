@@ -9,6 +9,8 @@ import UIKit
 
 class NoteDetailScreenViewController: UIViewController {
 
+    
+
     @IBOutlet weak var noteTitle: UITextField!
     @IBOutlet weak var noteTextView: UITextView!
     @IBOutlet weak var saveButton: UIButton!
@@ -24,19 +26,30 @@ class NoteDetailScreenViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        noteTextView.delegate = self
         noteTitle.text = note?.noteTitle ?? ""
         noteTextView.text = note?.noteDetail ?? ""
+        setGame(game: game, confirmation: false)
     }
     
+
     func setGame(game: APIModel? , confirmation: Bool = true) {
-        
+        if let game {
+            gameButton.configuration = .gray()
+            gameButton.configuration?.imagePadding = 5
+            gameButton.setTitle(game.name, for: .normal)
+            print(confirmation)
+        }
+        if(confirmation) {
+            saveValidator()
+        }
     }
 
-    private func saveValidator() {
+     func saveValidator() {
         saveButton.isEnabled = false
         guard !(noteTitle.text?.isEmpty ?? true) else {return}
         guard !noteTextView.text.isEmpty else {return}
-        guard noteTextView.textColor == UIColor.label else {return}
+        //guard noteTextView.textColor == UIColor.label else {return}
         guard game != nil else {return}
         saveButton.isEnabled = true
     }
@@ -79,10 +92,11 @@ class NoteDetailScreenViewController: UIViewController {
     @IBAction func gameAction(_ sender: Any) {
         // to search page
         
-        let destinationVC = storyboard?.instantiateViewController(withIdentifier: "SearchVC") as! SearchScreenViewController
+        let destinationVC = storyboard?.instantiateViewController(withIdentifier: "HomeVC") as! HomeScreenViewController
         destinationVC.modalTransitionStyle = .crossDissolve
         destinationVC.modalPresentationStyle = .formSheet
-        //destinationVC.searchController = UISearchController()
+        destinationVC.sender = 1
+        navigationController?.pushViewController(destinationVC, animated: true)
         self.present(destinationVC, animated: true)
     }
 
@@ -107,3 +121,4 @@ extension NoteDetailScreenViewController: UITextViewDelegate {
     }
     
 }
+
