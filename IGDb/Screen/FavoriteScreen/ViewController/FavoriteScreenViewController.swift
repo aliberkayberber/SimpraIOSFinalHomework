@@ -21,7 +21,7 @@ class FavoriteScreenViewController: UIViewController {
         favTableView.delegate = self
         favTableView.dataSource = self
         favTableView.register(UINib(nibName: "FavoriteTableViewCell", bundle: nil), forCellReuseIdentifier: "FavoriteTableViewCell")
-        favTableView.rowHeight = 175.0
+        favTableView.rowHeight = 250.0
         viewModel.delegate = self
         favActivityIndicator.startAnimating()
         viewModel.getFavoriteGame()
@@ -66,8 +66,12 @@ extension FavoriteScreenViewController: UITableViewDelegate , UITableViewDataSou
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
-        // present
+        if let gameID = viewModel.getGameId(at: indexPath.row) {
+            // MARK :
+            let destinationVC = storyboard?.instantiateViewController(withIdentifier: "GameDetailVC") as? GameDetailScreenViewController
+            destinationVC?.gameId = gameID
+            self.navigationController?.pushViewController(destinationVC!, animated: true)
+        }
     }
     
   /*

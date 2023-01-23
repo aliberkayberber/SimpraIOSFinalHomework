@@ -78,6 +78,12 @@ class NoteDetailScreenViewController: UIViewController {
     
     @IBAction func gameAction(_ sender: Any) {
         // to search page
+        
+        let destinationVC = storyboard?.instantiateViewController(withIdentifier: "SearchVC") as! SearchScreenViewController
+        destinationVC.modalTransitionStyle = .crossDissolve
+        destinationVC.modalPresentationStyle = .formSheet
+        //destinationVC.searchController = UISearchController()
+        self.present(destinationVC, animated: true)
     }
 
 }

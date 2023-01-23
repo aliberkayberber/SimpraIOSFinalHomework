@@ -16,7 +16,8 @@ protocol GameDetailScreenViewModelProtocol {
     func getGameRate() -> Int?
     func handleFavorite() -> Bool?
     func isFavoriteGame(_ id: Int) -> Bool?
-    func getGameDate() ->String? 
+    func getGameDate() ->String?
+    func getGameDetail() -> String?
     
 }
 
@@ -41,6 +42,10 @@ final class GameDetailScrenViewModel: GameDetailScreenViewModelProtocol {
     
     func getGameImageUrl(_ size: Int) -> URL? {
         return URL(string: Settings.sharedInstance.resizeImageRemote(imgUrl: game?.imageWide, size: size) ?? "")
+    }
+    
+    func getGameDetail() -> String? {
+        return game?.description ?? ""
     }
     
     func getGameDeveloper() -> String? {

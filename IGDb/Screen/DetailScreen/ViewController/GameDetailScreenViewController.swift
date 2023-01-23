@@ -10,6 +10,8 @@ import UIImageColors
 
 class GameDetailScreenViewController: UIViewController {
 
+    
+
     @IBOutlet weak var background: UIView!
     @IBOutlet weak var gameImageView: UIImageView!
     @IBOutlet weak var favButton: UIButton!
@@ -28,6 +30,7 @@ class GameDetailScreenViewController: UIViewController {
         super.viewDidLoad()
         guard let id = gameId else {return}
         // transfer data
+        
         gameImageView.layer.cornerRadius = 7.5
         viewModel.delegate = self
         viewModel.fetchGame(id)
@@ -44,6 +47,7 @@ class GameDetailScreenViewController: UIViewController {
     
     @IBAction func pressedFav(_ sender: Any) {
         //
+        favoriteHandler(status: viewModel.handleFavorite())
     }
     
     private func favoriteHandler(status: Bool?) {
@@ -67,10 +71,11 @@ class GameDetailScreenViewController: UIViewController {
                 colors in UIView.transition(with: self.view, duration: 0.25, options: .transitionCrossDissolve) {
                     self.gameRateLabel.textColor = colors?.detail
                     self.gameDetailView.textColor = colors?.detail
-                    self.gameDateLabel.textColor = colors?.primary
+                    self.gameDateLabel.textColor = .white
                     self.gameNameLabel.textColor = colors?.secondary
                     self.gameDeveloperName.textColor = colors?.secondary
-                    self.view.backgroundColor = colors?.background
+                    
+                    //self.view.backgroundColor = colors?.background
                 }
             }
         }
@@ -86,6 +91,7 @@ extension GameDetailScreenViewController: GameDetailScreenViewModelDelegate {
         }
         self.gameNameLabel.text = self.viewModel.getGameTitle()
         self.gameDeveloperName.text = self.viewModel.getGameDeveloper()
+        self.gameDetailView.text = self.viewModel.getGameDetail()
         //self.gameRateLabel.text = self.viewModel.getGameRate()
         if self.viewModel.getGameRate() != nil {
             let gameMetacriticArr = self.viewModel.getGameRate()?.description.components(separatedBy: "l")
@@ -104,3 +110,4 @@ extension GameDetailScreenViewController: GameDetailScreenViewModelDelegate {
         
     }
 }
+

@@ -109,6 +109,9 @@ extension SearchScreenViewController: UITableViewDelegate , UITableViewDataSourc
         }
         if let gameID = viewModel.getGameId(at: indexPath.row) {
             // MARK :
+            let destinationVC = storyboard?.instantiateViewController(withIdentifier: "GameDetailVC") as? GameDetailScreenViewController
+            destinationVC?.gameId = gameID
+            self.navigationController?.pushViewController(destinationVC!, animated: true)
         }
         tableView.deselectRow(at: indexPath, animated: true)
     }

@@ -35,6 +35,16 @@ class NoteScreenViewController: UIViewController {
         }
     }
     
+    
+    @IBAction func newButtonClicked(_ sender: Any) {
+        let destinationVC = storyboard?.instantiateViewController(withIdentifier: "NoteDetailVC") as! NoteDetailScreenViewController
+        destinationVC.modalTransitionStyle = .crossDissolve
+        destinationVC.modalPresentationStyle = .formSheet
+        self.present(destinationVC, animated: true)
+    }
+    
+    
+    
 }
 extension NoteScreenViewController: NoteScreenViewModelDelegate {
     func getNotes() {

@@ -35,7 +35,14 @@ class HomeScreenViewController: UIViewController {
 
 extension HomeScreenViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        
+        let vc = UIStoryboard(name: "Main", bundle: nil)
+        let destinationVC = storyboard?.instantiateViewController(withIdentifier: "GameDetailVC") as! GameDetailScreenViewController
+        destinationVC.modalTransitionStyle = .crossDissolve
+        destinationVC.modalPresentationStyle = .formSheet
+        let gameId = viewModel.getGameId(at: indexPath.row)
+        destinationVC.gameId = viewModel.getGameId(at: indexPath.row)
+        self.present(destinationVC, animated: true)
+
     }
 }
 extension HomeScreenViewController: UICollectionViewDelegateFlowLayout {

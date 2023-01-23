@@ -68,7 +68,7 @@ final class FavoriteCoreData {
         let fetchRequest: NSFetchRequest<Favorite>
         fetchRequest = Favorite.fetchRequest()
         
-        fetchRequest.predicate = NSPredicate(format: "gameId = %d", id)
+        fetchRequest.predicate = NSPredicate(format: "gameID = %d", id)
         
         do {
             let objects = try managedContext.fetch(fetchRequest)
