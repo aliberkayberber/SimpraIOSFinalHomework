@@ -228,7 +228,7 @@
 		9823385E8EB8B17DE9403A208C00E178 /* Pods-IGDb-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-IGDb-acknowledgements.plist"; sourceTree = "<group>"; };
 		9BB5AA29AC684188C0DB4C46C171D19F /* Kingfisher-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Kingfisher-prefix.pch"; sourceTree = "<group>"; };
 		9D9338313C5AEF3B15C10534950DFD3B /* AlamofireExtended.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlamofireExtended.swift; path = Source/AlamofireExtended.swift; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9F40D8BFC33C7F5F0AB83C9086C3E28B /* KFOptionsSetter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KFOptionsSetter.swift; path = Sources/General/KFOptionsSetter.swift; sourceTree = "<group>"; };
 		9FE6D5A3ADC8B6143418E7B31BFEA85E /* CPListItem+Kingfisher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CPListItem+Kingfisher.swift"; path = "Sources/Extensions/CPListItem+Kingfisher.swift"; sourceTree = "<group>"; };
 		A1D70E7968E2A1CD5CB5E9968A62BB29 /* Kingfisher.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Kingfisher.release.xcconfig; sourceTree = "<group>"; };
@@ -449,7 +449,6 @@
 				8A78C78E42C5240042720405834E444B /* Validation.swift */,
 				2AF05986E18560717A2977B991416DFF /* Support Files */,
 			);
-			name = Alamofire;
 			path = Alamofire;
 			sourceTree = "<group>";
 		};
@@ -536,7 +535,6 @@
 				4C6A8079CE905C23547B8EA83BA68DE5 /* WKInterfaceImage+Kingfisher.swift */,
 				3F86907E7B6CF75A50ED974829F6332D /* Support Files */,
 			);
-			name = Kingfisher;
 			path = Kingfisher;
 			sourceTree = "<group>";
 		};
@@ -557,7 +555,6 @@
 				2153070A210C5C37C284F98A9B75704E /* UIImageColors.swift */,
 				5D0A956B87BE4C6FBD19719E74E6E3C0 /* Support Files */,
 			);
-			name = UIImageColors;
 			path = UIImageColors;
 			sourceTree = "<group>";
 		};
@@ -690,6 +687,14 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1300;
 				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					BDB3D9762DE1E9282191B6B26703E4DE = {
+						LastSwiftMigration = "";
+					};
+					EAAA1AD3A8A1B59AB91319EE40752C6D = {
+						LastSwiftMigration = "";
+					};
+				};
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 14.0";

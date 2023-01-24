@@ -20,7 +20,6 @@ class HomeScreenViewController: UIViewController {
     var sender: Int?
     override func viewDidLoad() {
         super.viewDidLoad()
-
         setupUI()
         
         viewModel.delegate = self

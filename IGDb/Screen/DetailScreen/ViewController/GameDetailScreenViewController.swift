@@ -7,6 +7,7 @@
 
 import UIKit
 import UIImageColors
+import UserNotifications
 
 class GameDetailScreenViewController: UIViewController {
 
@@ -47,13 +48,34 @@ class GameDetailScreenViewController: UIViewController {
     
     @IBAction func pressedFav(_ sender: Any) {
         //
+        
         favoriteHandler(status: viewModel.handleFavorite())
-    }
+        
+        }
+        
     
     private func favoriteHandler(status: Bool?) {
         if let status {
             if status {
                 favButton.setImage(UIImage(systemName: "heart.fill"), for: .normal)
+                let center = UNUserNotificationCenter.current()
+                let content = UNMutableNotificationContent()
+                content.title = "Hello User"
+                content.body = "Game Added"
+                content.sound = .default
+               
+                
+                let fireDate = Calendar.current.dateComponents([.day, .month,.year,.hour,.minute,.second], from: Date().addingTimeInterval(5))
+                let trigger = UNCalendarNotificationTrigger(dateMatching: fireDate, repeats: false)
+                
+                let uuid = UUID().uuidString
+                let request = UNNotificationRequest(identifier: uuid, content: content, trigger: trigger)
+                print("string \(request)")
+                center.add(request) { (error) in
+                    if error != nil {
+                        print("error local noti")
+                    }
+                }
             } else {
                 favButton.setImage(UIImage(systemName: "heart"), for: .normal)
             }
@@ -81,6 +103,21 @@ class GameDetailScreenViewController: UIViewController {
         }
     }
     
+    func localNotification() {
+            let content = UNMutableNotificationContent()
+                content.title = "Hello My App User"
+                content.body = "Gamed added"
+                
+                let date = Date().addingTimeInterval(2)
+                let dataComponent = Calendar.current.dateComponents([.year,.month,.day,.hour,.minute,.second], from: date)
+                let trigger = UNCalendarNotificationTrigger(dateMatching: dataComponent, repeats: false)
+                
+                let uuid = UUID().uuidString
+                let request = UNNotificationRequest(identifier: uuid, content: content, trigger: trigger)
+                
+                UNUserNotificationCenter.current().add(request)
+                
+    }
     
 }
 
@@ -98,7 +135,7 @@ extension GameDetailScreenViewController: GameDetailScreenViewModelDelegate {
             gameRateLabel.text = gameMetacriticArr?[0] ?? ""
         }
         else {
-            gameRateLabel.text = "unknow"
+            gameRateLabel.text = "-"
         }
         self.gameDateLabel.text = self.viewModel.getGameDate()
         self.gameImageView.kf.indicatorType = .activity

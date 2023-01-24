@@ -17,7 +17,6 @@ class FavoriteScreenViewController: UIViewController {
     private var viewModel: FavoriteScreenViewModelProtocol = FavoriteScreenViewModel()
     override func viewDidLoad() {
         super.viewDidLoad()
-
         favTableView.delegate = self
         favTableView.dataSource = self
         favTableView.register(UINib(nibName: "FavoriteTableViewCell", bundle: nil), forCellReuseIdentifier: "FavoriteTableViewCell")

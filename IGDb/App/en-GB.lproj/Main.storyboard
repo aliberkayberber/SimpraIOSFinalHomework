@@ -246,7 +246,7 @@
             </objects>
             <point key="canvasLocation" x="3554.9618320610684" y="-202.11267605633805"/>
         </scene>
-        <!--Favorite Screen View Controller-->
+        <!--Favorites-->
         <scene sceneID="c5t-pJ-oqM">
             <objects>
                 <viewController storyboardIdentifier="FavoriteVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="g4X-df-TPh" customClass="FavoriteScreenViewController" customModule="IGDb" customModuleProvider="target" propertyAccessControl="localizable" sceneMemberID="viewController">
@@ -275,7 +275,7 @@
                             <constraint firstItem="PHT-pD-Tn0" firstAttribute="top" secondItem="f03-o3-f1Z" secondAttribute="bottom" constant="-367" id="pUl-sg-zBI"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="hxe-Hi-pcN"/>
+                    <navigationItem key="navigationItem" title="Favorites" id="hxe-Hi-pcN"/>
                     <connections>
                         <outlet property="favActivityIndicator" destination="PHT-pD-Tn0" id="lYe-fJ-zwv"/>
                         <outlet property="favTableView" destination="f03-o3-f1Z" id="bfy-M1-yXY"/>
@@ -286,7 +286,7 @@
             </objects>
             <point key="canvasLocation" x="2075.5725190839694" y="663.38028169014092"/>
         </scene>
-        <!--Note Screen View Controller-->
+        <!--Notes-->
         <scene sceneID="prb-tX-7H7">
             <objects>
                 <viewController storyboardIdentifier="NoteVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="PlW-kf-1Oa" customClass="NoteScreenViewController" customModule="IGDb" customModuleProvider="target" propertyAccessControl="localizable" sceneMemberID="viewController">
@@ -324,7 +324,7 @@
                             <constraint firstItem="yNo-Ea-7MZ" firstAttribute="leading" secondItem="cKP-pt-24k" secondAttribute="leading" id="n23-X4-OC9"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="BSn-tK-SQL"/>
+                    <navigationItem key="navigationItem" title="Notes" id="BSn-tK-SQL"/>
                     <connections>
                         <outlet property="newNoteButton" destination="nZv-SP-LLf" id="n21-ML-2CQ"/>
                         <outlet property="noteActivityIndicator" destination="cKP-pt-24k" id="TNC-8O-6Sj"/>
@@ -510,7 +510,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="wg0-jF-sIr"/>
+        <segue reference="K7D-ZW-UvW"/>
         <segue reference="ifI-H2-g2S"/>
     </inferredMetricsTieBreakers>
     <resources>

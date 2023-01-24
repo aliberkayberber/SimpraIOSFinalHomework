@@ -30,8 +30,8 @@
             filePath = "IGDb/Screen/HomeScreen/ViewController/SearchScreenViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "131"
-            endingLineNumber = "131"
+            startingLineNumber = "133"
+            endingLineNumber = "133"
             landmarkName = "updateSearchResults(for:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -48,7 +48,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "51"
             endingLineNumber = "51"
-            landmarkName = "setGame(game:confirmation:)"
+            landmarkName = "saveValidator()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -64,7 +64,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "50"
             endingLineNumber = "50"
-            landmarkName = "setGame(game:confirmation:)"
+            landmarkName = "saveValidator()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -72,7 +72,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "5B4B3400-BE1D-4B37-AA44-2AE64171B393"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "IGDb/Screen/NoteDetailScreen/ViewController/NoteDetailScreenViewController.swift"
@@ -120,7 +120,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "A906B629-CE94-4B4D-B444-97D2BEB06C6B"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "IGDb/Screen/NoteDetailScreen/ViewController/NoteDetailScreenViewController.swift"
@@ -136,7 +136,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "A4E82512-EA99-4676-A85C-068AA39CD454"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "IGDb/Screen/NoteDetailScreen/ViewController/NoteDetailScreenViewController.swift"
@@ -144,7 +144,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "40"
             endingLineNumber = "40"
-            landmarkName = "viewWillAppear(_:)"
+            landmarkName = "setGame(game:confirmation:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -152,7 +152,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "EA327982-0FC1-49A0-B147-32D7E9BB5AC9"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "IGDb/Screen/NoteDetailScreen/ViewController/NoteDetailScreenViewController.swift"
@@ -161,6 +161,70 @@
             startingLineNumber = "32"
             endingLineNumber = "32"
             landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FE571143-ED92-42D9-819C-C97D0478D016"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "IGDb/Screen/DetailScreen/ViewController/GameDetailScreenViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
+            landmarkName = "pressedFav(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6D25F0DE-A095-491E-87C4-DCA5006F2452"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "IGDb/Screen/DetailScreen/ViewController/GameDetailScreenViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "85"
+            endingLineNumber = "85"
+            landmarkName = "favoriteHandler(status:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9FCEBC24-0CD2-4A54-BF6D-FBD14FB3F48D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "IGDb/Screen/DetailScreen/ViewController/GameDetailScreenViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "60"
+            endingLineNumber = "60"
+            landmarkName = "favoriteHandler(status:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "26B75CF1-5E28-4802-B2D4-B56FB4C6F201"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "IGDb/Screen/DetailScreen/ViewController/GameDetailScreenViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "118"
+            endingLineNumber = "118"
+            landmarkName = "localNotification()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

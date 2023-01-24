@@ -3,13 +3,14 @@
 "Esu-DQ-igp.title" = "Released in 2022";
 
 /* Class = "UITabBarItem"; title = "Item"; ObjectID = "NPd-WN-9aS"; */
-"NPd-WN-9aS.title" = "Item";
+"NPd-WN-9aS.title" = "Favorites";
 
 /* Class = "UITabBarItem"; title = "Item"; ObjectID = "QF8-dE-EIm"; */
-"QF8-dE-EIm.title" = "Item";
+"QF8-dE-EIm.title" = "Note";
 
 /* Class = "UITabBarItem"; title = "Item"; ObjectID = "Xw7-pE-QFX"; */
-"Xw7-pE-QFX.title" = "Item";
+"Xw7-pE-QFX.title" = "";
 
 /* Class = "UITabBarItem"; title = "Item"; ObjectID = "ZPY-dY-Muz"; */
-"ZPY-dY-Muz.title" = "Item";
+"ZPY-dY-Muz.title" = "Search";
+

@@ -53,11 +53,13 @@ class SearchScreenViewController: UIViewController {
         switch status {
         case 0:
             searchText.isHidden = false
+            
         case 1:
             searchText.isHidden = true
             searchIndicator.startAnimating()
         case 2:
             searchText.isHidden = false
+            
         case 3:
             searchText.isHidden = true
         default:
@@ -140,3 +142,5 @@ extension SearchScreenViewController: UISearchResultsUpdating {
       self.view.endEditing(true) 
   }
 }
+
+
