@@ -35,12 +35,30 @@ class NoteScreenViewController: UIViewController {
         }
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        switch segue.identifier{
+        case "NoteToDetail":
+            if let note = sender as? Note {
+                let goalVC = segue.destination as! NoteDetailScreenViewController
+                let game = APIModel(id: Int(note.gameID), tba: nil, name: note.gameTitle, released: nil, metacritic: nil, rating: nil, parentPlatforms: nil, genres: nil, imageWide: note.imageURL)
+                goalVC.delegateNoteScreen = self
+                goalVC.game = game
+                goalVC.note = note
+            }
+
+        default:
+            return
+        }
+    }
     
     @IBAction func newButtonClicked(_ sender: Any) {
+        //performSegue(withIdentifier: "NoteToNoteDetail", sender: nil)
+        
         let destinationVC = storyboard?.instantiateViewController(withIdentifier: "NoteDetailVC") as! NoteDetailScreenViewController
         destinationVC.modalTransitionStyle = .crossDissolve
         destinationVC.modalPresentationStyle = .formSheet
         self.present(destinationVC, animated: true)
+         
     }
     
     

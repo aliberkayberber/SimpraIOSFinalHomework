@@ -21,7 +21,7 @@ class NoteDetailScreenViewController: UIViewController {
     var note: Note?
     var game: APIModel?
     private var updateNote: NoteDetailModel?
-    weak var delegateNoteScreen: NoteDetailScreenViewController?
+    weak var delegateNoteScreen: NoteScreenViewController?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -49,7 +49,7 @@ class NoteDetailScreenViewController: UIViewController {
         saveButton.isEnabled = false
         guard !(noteTitle.text?.isEmpty ?? true) else {return}
         guard !noteTextView.text.isEmpty else {return}
-        //guard noteTextView.textColor == UIColor.label else {return}
+        guard noteTextView.textColor == UIColor.label else {return}
         guard game != nil else {return}
         saveButton.isEnabled = true
     }
@@ -62,7 +62,13 @@ class NoteDetailScreenViewController: UIViewController {
         URL(string: imgUrl ?? "")?.lastPathComponent
     }
                                      
-                                     
+        
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let destinationVC = segue.destination as! HomeScreenViewController
+        destinationVC.sender = 1
+        destinationVC.delegateDetailNote = self
+    }
+    
     @IBAction func didTitleChanged(_ sender: Any) {
         saveValidator()
     }
@@ -91,14 +97,15 @@ class NoteDetailScreenViewController: UIViewController {
     
     @IBAction func gameAction(_ sender: Any) {
         // to search page
-        
+        performSegue(withIdentifier: "NoteToHome", sender: nil)
+      /*
         let destinationVC = storyboard?.instantiateViewController(withIdentifier: "HomeVC") as! HomeScreenViewController
         destinationVC.modalTransitionStyle = .crossDissolve
         destinationVC.modalPresentationStyle = .formSheet
         destinationVC.sender = 1
         navigationController?.pushViewController(destinationVC, animated: true)
         self.present(destinationVC, animated: true)
-        
+        */
     }
 
 }

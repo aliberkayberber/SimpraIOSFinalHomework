@@ -54,7 +54,7 @@
                     <navigationItem key="navigationItem" id="Esu-DQ-igp">
                         <nil key="title"/>
                         <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bordered" selectedSegmentIndex="0" id="MDx-uR-geH">
-                            <rect key="frame" x="16" y="5.6666666666666679" width="361" height="33"/>
+                            <rect key="frame" x="50" y="5.6666666666666679" width="327" height="33"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <segments>
                                 <segment title="All"/>
@@ -318,10 +318,10 @@
                         <viewLayoutGuide key="safeArea" id="Rv3-ki-BRg"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="yNo-Ea-7MZ" firstAttribute="trailing" secondItem="cKP-pt-24k" secondAttribute="trailing" id="ZyP-c1-5Ho"/>
-                            <constraint firstItem="yNo-Ea-7MZ" firstAttribute="top" secondItem="Rv3-ki-BRg" secondAttribute="top" id="a4G-lR-XCy"/>
-                            <constraint firstItem="yNo-Ea-7MZ" firstAttribute="bottom" secondItem="Rv3-ki-BRg" secondAttribute="bottom" id="boB-eV-E3y"/>
-                            <constraint firstItem="yNo-Ea-7MZ" firstAttribute="leading" secondItem="cKP-pt-24k" secondAttribute="leading" id="n23-X4-OC9"/>
+                            <constraint firstItem="yNo-Ea-7MZ" firstAttribute="bottom" secondItem="Rv3-ki-BRg" secondAttribute="bottom" id="CRC-CA-8Rq"/>
+                            <constraint firstItem="yNo-Ea-7MZ" firstAttribute="top" secondItem="Rv3-ki-BRg" secondAttribute="top" id="htb-3S-84g"/>
+                            <constraint firstItem="yNo-Ea-7MZ" firstAttribute="trailing" secondItem="nZv-SP-LLf" secondAttribute="trailing" id="p3m-Jx-MmJ"/>
+                            <constraint firstItem="yNo-Ea-7MZ" firstAttribute="leading" secondItem="cKP-pt-24k" secondAttribute="leading" id="x8Z-Ki-6Ur"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="BSn-tK-SQL"/>
@@ -329,7 +329,8 @@
                         <outlet property="newNoteButton" destination="nZv-SP-LLf" id="n21-ML-2CQ"/>
                         <outlet property="noteActivityIndicator" destination="cKP-pt-24k" id="TNC-8O-6Sj"/>
                         <outlet property="noteTableView" destination="yNo-Ea-7MZ" id="y7F-Fl-7HO"/>
-                        <segue destination="pJF-rE-9pX" kind="show" id="91f-mH-vym"/>
+                        <segue destination="pJF-rE-9pX" kind="show" identifier="NoteToNoteDetail" id="91f-mH-vym"/>
+                        <segue destination="pJF-rE-9pX" kind="show" identifier="NoteToDetail" id="e0R-5R-iaR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zCb-gf-TUd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -373,6 +374,7 @@
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="saveAction:" destination="pJF-rE-9pX" eventType="touchUpInside" id="jen-jj-72d"/>
+                                    <segue destination="keg-B6-cAw" kind="show" identifier="NoteToHome" id="MPC-Y9-pai"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HJi-yP-VYU">
@@ -404,7 +406,6 @@
                         <outlet property="noteTextView" destination="I9B-0C-PxG" id="bPQ-FL-FiL"/>
                         <outlet property="noteTitle" destination="sGb-LM-cZ1" id="lRD-um-WnB"/>
                         <outlet property="saveButton" destination="caB-eY-gHG" id="X5h-3j-Tlb"/>
-                        <segue destination="BYZ-38-t0r" kind="show" id="ifI-H2-g2S"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Y3l-uY-ejf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -510,8 +511,9 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="wg0-jF-sIr"/>
-        <segue reference="ifI-H2-g2S"/>
+        <segue reference="e0R-5R-iaR"/>
+        <segue reference="K7D-ZW-UvW"/>
+        <segue reference="MPC-Y9-pai"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="heart" catalog="system" width="128" height="107"/>

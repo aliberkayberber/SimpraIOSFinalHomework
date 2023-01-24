@@ -46,12 +46,12 @@ extension HomeScreenViewController: UICollectionViewDelegate {
             switch sender {
             case 1:
                 delegateDetailNote?.setGame(game: viewModel.getGame(at: indexPath.row))
-                let desitinationVC = storyboard?.instantiateViewController(withIdentifier: "NoteDetailVC") as? NoteDetailScreenViewController
-                delegate?.fetchGetGame(game: viewModel.getGame(at: indexPath.row)!)
-                desitinationVC?.game = viewModel.getGame(at: indexPath.row)
+                //let desitinationVC = storyboard?.instantiateViewController(withIdentifier: "NoteDetailVC") as? NoteDetailScreenViewController
+                //delegate?.fetchGetGame(game: viewModel.getGame(at: indexPath.row)!)
+                //desitinationVC?.game = viewModel.getGame(at: indexPath.row)
                 
-                self.present(desitinationVC!, animated: true, completion: nil)
-                navigationController?.pushViewController(desitinationVC!, animated: true)
+                //self.present(desitinationVC!, animated: true, completion: nil)
+                //navigationController?.pushViewController(desitinationVC!, animated: true)
                 dismiss(animated: true)
             default:
                 //homeCollectionView.deselectRow(at: indexPath, animated: true)
