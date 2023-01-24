@@ -363,20 +363,6 @@
                                     <action selector="gameAction:" destination="pJF-rE-9pX" eventType="touchUpInside" id="SyL-Q6-eCO"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="caB-eY-gHG">
-                                <rect key="frame" x="132" y="727" width="129" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Save">
-                                    <backgroundConfiguration key="background">
-                                        <color key="backgroundColor" systemColor="secondaryLabelColor"/>
-                                    </backgroundConfiguration>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="saveAction:" destination="pJF-rE-9pX" eventType="touchUpInside" id="jen-jj-72d"/>
-                                    <segue destination="keg-B6-cAw" kind="show" identifier="NoteToHome" id="MPC-Y9-pai"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HJi-yP-VYU">
                                 <rect key="frame" x="275" y="96" width="102" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -395,6 +381,20 @@
                                     <action selector="didTitleChanged:" destination="pJF-rE-9pX" eventType="editingDidEnd" id="1l0-D0-5fg"/>
                                 </connections>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="caB-eY-gHG">
+                                <rect key="frame" x="132" y="734" width="129" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Save">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" systemColor="secondaryLabelColor"/>
+                                    </backgroundConfiguration>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="saveAction:" destination="pJF-rE-9pX" eventType="touchUpInside" id="jen-jj-72d"/>
+                                    <segue destination="keg-B6-cAw" kind="show" identifier="NoteToHome" id="MPC-Y9-pai"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Afg-FP-Qxg"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>

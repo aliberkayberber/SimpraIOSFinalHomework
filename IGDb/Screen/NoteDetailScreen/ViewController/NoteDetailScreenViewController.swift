@@ -29,7 +29,7 @@ class NoteDetailScreenViewController: UIViewController {
         noteTitle.text = note?.noteTitle ?? ""
         noteTextView.text = note?.noteDetail ?? ""
         setGame(game: game, confirmation: false)
-        
+        noteTextView.backgroundColor = .gray
     }
     func setGame(game: APIModel? , confirmation: Bool = true) {
         
@@ -40,9 +40,9 @@ class NoteDetailScreenViewController: UIViewController {
             gameButton.setTitle(game.name, for: .normal)
             print(game)
         }
-       
+        if(confirmation) {
             saveValidator()
-        
+        }
     }
 
      func saveValidator() {

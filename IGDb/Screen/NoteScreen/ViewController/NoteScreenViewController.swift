@@ -27,6 +27,7 @@ class NoteScreenViewController: UIViewController {
         viewModel.delegate = self
         noteActivityIndicator.startAnimating()
         viewModel.fetchNote()
+        noteTableView.reloadData()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -89,6 +90,10 @@ extension NoteScreenViewController: UITableViewDelegate , UITableViewDataSource 
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         // present
+        if let note = viewModel.getNote(at: indexPath.row) {
+            performSegue(withIdentifier: "NoteToDetail", sender: note)
+        }
+            
     }
     func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
         

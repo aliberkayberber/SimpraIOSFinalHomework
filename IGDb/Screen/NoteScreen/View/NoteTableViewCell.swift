@@ -28,9 +28,9 @@ class NoteTableViewCell: UITableViewCell {
     
     func specialCell(_ note:Note) {
         noteGameName.text = note.gameTitle
-        noteGameTitle.text = noteGameTitle.text
-        noteTextLabel.text = noteTextLabel.text
-        
+        noteGameTitle.text = note.noteTitle
+        noteTextLabel.text = note.noteDetail
+        changeImage(imgUrl: note.imageURL)
     }
     private func changeImage(imgUrl: String?) {
         if let imgSized = Settings.sharedInstance.resizeImageRemote(imgUrl: imgUrl){
