@@ -72,5 +72,36 @@ extension NoteScreenViewController: UITableViewDelegate , UITableViewDataSource 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         // present
     }
+    func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        
+        let note = viewModel.getNote(at: indexPath.row)
+        
+        let deleteConfirmAction = UIContextualAction(style: .destructive, title: "Delete"){ (contextualAction, view, bool ) in
+            let alert = UIAlertController(title: "Are you sure you want to delete", message: "\(note?.noteTitle! ?? "")", preferredStyle: .actionSheet)
+            
+            let cancelAction = UIAlertAction(title: "Cancel", style: .cancel){action in
+                tableView.reloadRows(at: [indexPath], with: .right)
+                tableView.reloadData()
+            }
+            
+            alert.addAction(cancelAction)
+            
+            let yesAction = UIAlertAction(title: "Delete", style: .destructive){action in
+                self.viewModel.deleteNote(at: indexPath.row)
+                tableView.reloadRows(at: [indexPath], with: .left)
+                
+            }
+            alert.addAction(yesAction)
+            // ipad Compatibility, min req ios 16
+            alert.popoverPresentationController?.sourceItem = self.newNoteButton
+            self.newNoteButton.isHidden = false
+            self.present(alert, animated: true)
+            
+        }
+        return UISwipeActionsConfiguration(actions: [deleteConfirmAction])
+           
+            
+        }
+    }
     
-}
+

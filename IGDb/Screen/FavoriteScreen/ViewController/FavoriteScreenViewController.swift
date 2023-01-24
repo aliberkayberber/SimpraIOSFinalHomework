@@ -33,8 +33,6 @@ class FavoriteScreenViewController: UIViewController {
             viewModel.getFavoriteGame()
         }
     }
-   
-
 
 }
 
@@ -71,11 +69,16 @@ extension FavoriteScreenViewController: UITableViewDelegate , UITableViewDataSou
             destinationVC?.gameId = gameID
             self.navigationController?.pushViewController(destinationVC!, animated: true)
         }
+        favTableView.deselectRow(at: indexPath, animated: true)
     }
     
-  /*
+  
     func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
-        //
+        let deleteAction = UIContextualAction(style: .destructive, title:"Remove Favorite"){ (contextualAction, view, bool ) in
+            self.viewModel.removeGame(at: indexPath.row)
+            self.favTableView.reloadRows(at: [indexPath], with: .left)
+        }
+        return UISwipeActionsConfiguration(actions: [deleteAction])
     }
-   */
+   
 }

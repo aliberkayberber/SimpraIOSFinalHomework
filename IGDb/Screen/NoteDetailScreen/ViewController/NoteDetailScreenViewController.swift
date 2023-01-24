@@ -9,7 +9,6 @@ import UIKit
 
 class NoteDetailScreenViewController: UIViewController {
 
-    
 
     @IBOutlet weak var noteTitle: UITextField!
     @IBOutlet weak var noteTextView: UITextView!
@@ -30,19 +29,20 @@ class NoteDetailScreenViewController: UIViewController {
         noteTitle.text = note?.noteTitle ?? ""
         noteTextView.text = note?.noteDetail ?? ""
         setGame(game: game, confirmation: false)
+        
     }
-    
-
     func setGame(game: APIModel? , confirmation: Bool = true) {
+        
         if let game {
+            self.game = game
             gameButton.configuration = .gray()
             gameButton.configuration?.imagePadding = 5
             gameButton.setTitle(game.name, for: .normal)
-            print(confirmation)
+            print(game)
         }
-        if(confirmation) {
+       
             saveValidator()
-        }
+        
     }
 
      func saveValidator() {
@@ -98,6 +98,7 @@ class NoteDetailScreenViewController: UIViewController {
         destinationVC.sender = 1
         navigationController?.pushViewController(destinationVC, animated: true)
         self.present(destinationVC, animated: true)
+        
     }
 
 }

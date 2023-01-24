@@ -72,7 +72,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "5B4B3400-BE1D-4B37-AA44-2AE64171B393"
-            shouldBeEnabled = "No"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "IGDb/Screen/NoteDetailScreen/ViewController/NoteDetailScreenViewController.swift"
@@ -88,7 +88,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "557ABB66-178A-4932-873E-1FCE425DBB56"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "IGDb/Screen/NoteDetailScreen/ViewController/NoteDetailScreenViewController.swift"
@@ -152,14 +152,14 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "EA327982-0FC1-49A0-B147-32D7E9BB5AC9"
-            shouldBeEnabled = "No"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "IGDb/Screen/NoteDetailScreen/ViewController/NoteDetailScreenViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "32"
-            endingLineNumber = "32"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>
@@ -226,6 +226,182 @@
             endingLineNumber = "118"
             landmarkName = "localNotification()"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "72A2093F-4503-40DF-ABA8-17789C0B927C"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "IGDb/Screen/HomeScreen/ViewController/HomeScreenViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
+            landmarkName = "collectionView(_:didSelectItemAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B76C40A0-6806-4096-9192-EA868B0DBBE2"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "IGDb/Screen/HomeScreen/ViewController/HomeScreenViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
+            landmarkName = "collectionView(_:didSelectItemAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9A84CD6F-082D-4C39-91C2-3FDE321B5357"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "IGDb/Screen/HomeScreen/ViewController/HomeScreenViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
+            landmarkName = "collectionView(_:didSelectItemAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "59D0BAFC-188B-4527-AA8C-32D629F1F90C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "IGDb/Screen/NoteDetailScreen/ViewController/NoteDetailScreenViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
+            landmarkName = "setGame(game:confirmation:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A81F5042-B14D-449E-A11F-B894C8A1B2FC"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "IGDb/Screen/NoteDetailScreen/ViewController/NoteDetailScreenViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
+            landmarkName = "setGame(game:confirmation:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B7246F28-1217-4405-8650-565957BE035A"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "IGDb/Screen/NoteDetailScreen/ViewController/NoteDetailScreenViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "setGame(game:confirmation:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "B7246F28-1217-4405-8650-565957BE035A - c4491a604fab53a3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "IGDb.NoteDetailScreenViewController.setGame(game: Swift.Optional&lt;IGDb.APIModel&gt;, confirmation: Swift.Bool) -&gt; ()"
+                  moduleName = "IGDb"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/aliberkayberber/Documents/GitHub/SimpraIOSFinalHomework/IGDb/Screen/NoteDetailScreen/ViewController/NoteDetailScreenViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
+                  offsetFromSymbolStart = "256">
+               </Location>
+               <Location
+                  uuid = "B7246F28-1217-4405-8650-565957BE035A - c4491a604fab53a3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "IGDb.NoteDetailScreenViewController.setGame(game: Swift.Optional&lt;IGDb.APIModel&gt;, confirmation: Swift.Bool) -&gt; ()"
+                  moduleName = "IGDb"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/aliberkayberber/Documents/GitHub/SimpraIOSFinalHomework/IGDb/Screen/NoteDetailScreen/ViewController/NoteDetailScreenViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
+                  offsetFromSymbolStart = "288">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3C8E6CAD-2F3F-46FC-8DBF-C8D5D0DE2C49"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "IGDb/Screen/NoteDetailScreen/ViewController/NoteDetailScreenViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
+            landmarkName = "setGame(game:confirmation:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "3C8E6CAD-2F3F-46FC-8DBF-C8D5D0DE2C49 - c4491a604fab53a3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "IGDb.NoteDetailScreenViewController.setGame(game: Swift.Optional&lt;IGDb.APIModel&gt;, confirmation: Swift.Bool) -&gt; ()"
+                  moduleName = "IGDb"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/aliberkayberber/Documents/GitHub/SimpraIOSFinalHomework/IGDb/Screen/NoteDetailScreen/ViewController/NoteDetailScreenViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
+                  offsetFromSymbolStart = "256">
+               </Location>
+               <Location
+                  uuid = "3C8E6CAD-2F3F-46FC-8DBF-C8D5D0DE2C49 - c4491a604fab53a3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "IGDb.NoteDetailScreenViewController.setGame(game: Swift.Optional&lt;IGDb.APIModel&gt;, confirmation: Swift.Bool) -&gt; ()"
+                  moduleName = "IGDb"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/aliberkayberber/Documents/GitHub/SimpraIOSFinalHomework/IGDb/Screen/NoteDetailScreen/ViewController/NoteDetailScreenViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
+                  offsetFromSymbolStart = "288">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

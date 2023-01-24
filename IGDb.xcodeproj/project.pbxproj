@@ -31,7 +31,6 @@
 		DD4AC05829746F990002FDA1 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4AC05729746F990002FDA1 /* Settings.swift */; };
 		DD6809122979D7E70019D76D /* FavoriteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6809102979D7E70019D76D /* FavoriteTableViewCell.swift */; };
 		DD6809132979D7E70019D76D /* FavoriteTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD6809112979D7E70019D76D /* FavoriteTableViewCell.xib */; };
-		DD8A918029749C450020A361 /* PinterestLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8A917F29749C450020A361 /* PinterestLayout.swift */; };
 		DDA997B7297D6A40000ABDDE /* GameDetailScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA997B6297D6A40000ABDDE /* GameDetailScreenViewController.swift */; };
 		DDA997B9297DA4EF000ABDDE /* NoteDetailScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA997B8297DA4EF000ABDDE /* NoteDetailScreenViewModel.swift */; };
 		DDABBC8F297BFD43002F559C /* FavoriteScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDABBC8E297BFD43002F559C /* FavoriteScreenViewController.swift */; };
@@ -76,7 +75,6 @@
 		DD4AC05729746F990002FDA1 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		DD6809102979D7E70019D76D /* FavoriteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteTableViewCell.swift; sourceTree = "<group>"; };
 		DD6809112979D7E70019D76D /* FavoriteTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoriteTableViewCell.xib; sourceTree = "<group>"; };
-		DD8A917F29749C450020A361 /* PinterestLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinterestLayout.swift; sourceTree = "<group>"; };
 		DDA997B6297D6A40000ABDDE /* GameDetailScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDetailScreenViewController.swift; sourceTree = "<group>"; };
 		DDA997B8297DA4EF000ABDDE /* NoteDetailScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteDetailScreenViewModel.swift; sourceTree = "<group>"; };
 		DDA997BE297F3B35000ABDDE /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
@@ -181,7 +179,6 @@
 		DD4AC020297302390002FDA1 /* HomeScreen */ = {
 			isa = PBXGroup;
 			children = (
-				DD8A917E29749C2B0020A361 /* Layouts */,
 				DD4AC028297306180002FDA1 /* ViewController */,
 				DD4AC027297304830002FDA1 /* ViewModel */,
 				DD4AC026297304770002FDA1 /* View */,
@@ -398,14 +395,6 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		DD8A917E29749C2B0020A361 /* Layouts */ = {
-			isa = PBXGroup;
-			children = (
-				DD8A917F29749C450020A361 /* PinterestLayout.swift */,
-			);
-			path = Layouts;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -549,7 +538,6 @@
 				DD4AC04E297445E80002FDA1 /* APIModel.swift in Sources */,
 				DD4AC046297365DB0002FDA1 /* HomeScreenViewController.swift in Sources */,
 				DD6809122979D7E70019D76D /* FavoriteTableViewCell.swift in Sources */,
-				DD8A918029749C450020A361 /* PinterestLayout.swift in Sources */,
 				DD4AC04C297445910002FDA1 /* Network.swift in Sources */,
 				DDA997B7297D6A40000ABDDE /* GameDetailScreenViewController.swift in Sources */,
 				DD4AC0522974477D0002FDA1 /* ModelResponse.swift in Sources */,

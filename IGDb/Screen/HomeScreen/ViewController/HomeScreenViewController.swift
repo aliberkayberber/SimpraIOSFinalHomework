@@ -8,6 +8,10 @@
 import UIKit
 import AVFoundation
 
+protocol DataTransfer {
+    func fetchGetGame(game: APIModel)
+}
+
 class HomeScreenViewController: UIViewController {
 
     weak var delegateDetailNote: NoteDetailScreenViewController?
@@ -18,6 +22,8 @@ class HomeScreenViewController: UIViewController {
     
     private var viewModel: HomeScreenViewModelProtocol = HomeScreenViewModel()
     var sender: Int?
+    var delegate: DataTransfer? = nil
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
@@ -41,12 +47,15 @@ extension HomeScreenViewController: UICollectionViewDelegate {
             case 1:
                 delegateDetailNote?.setGame(game: viewModel.getGame(at: indexPath.row))
                 let desitinationVC = storyboard?.instantiateViewController(withIdentifier: "NoteDetailVC") as? NoteDetailScreenViewController
-               
+                delegate?.fetchGetGame(game: viewModel.getGame(at: indexPath.row)!)
                 desitinationVC?.game = viewModel.getGame(at: indexPath.row)
+                
+                self.present(desitinationVC!, animated: true, completion: nil)
                 navigationController?.pushViewController(desitinationVC!, animated: true)
                 dismiss(animated: true)
             default:
-                return
+                //homeCollectionView.deselectRow(at: indexPath, animated: true)
+                homeCollectionView.deselectItem(at: indexPath, animated: true)
             }
 
         }

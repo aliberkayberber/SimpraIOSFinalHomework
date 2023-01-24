@@ -76,7 +76,10 @@ final class FavoriteScreenViewModel: FavoriteScreenViewModelProtocol {
     
     // will be core data remove
     func removeGame(at index: Int) {
-        
+        FavoriteCoreData.shared.deleteFavorite(game: favorite[index])
+        favorite.remove(at: index)
+        game?.remove(at: index)
+        self.delegate?.gettedFavorite()
     }
 }
 
