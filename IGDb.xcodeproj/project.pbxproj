@@ -31,7 +31,16 @@
 		DD4AC05829746F990002FDA1 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4AC05729746F990002FDA1 /* Settings.swift */; };
 		DD6809122979D7E70019D76D /* FavoriteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6809102979D7E70019D76D /* FavoriteTableViewCell.swift */; };
 		DD6809132979D7E70019D76D /* FavoriteTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD6809112979D7E70019D76D /* FavoriteTableViewCell.xib */; };
-		DD8A918029749C450020A361 /* PinterestLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8A917F29749C450020A361 /* PinterestLayout.swift */; };
+		DDA997B7297D6A40000ABDDE /* GameDetailScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA997B6297D6A40000ABDDE /* GameDetailScreenViewController.swift */; };
+		DDA997B9297DA4EF000ABDDE /* NoteDetailScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA997B8297DA4EF000ABDDE /* NoteDetailScreenViewModel.swift */; };
+		DDABBC8F297BFD43002F559C /* FavoriteScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDABBC8E297BFD43002F559C /* FavoriteScreenViewController.swift */; };
+		DDABBC91297C1F86002F559C /* LocalDataBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDABBC90297C1F86002F559C /* LocalDataBase.swift */; };
+		DDABBC93297C6A1C002F559C /* GameDetailScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDABBC92297C6A1C002F559C /* GameDetailScreenViewModel.swift */; };
+		DDABBC96297C6BE1002F559C /* NoteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDABBC94297C6BE1002F559C /* NoteTableViewCell.swift */; };
+		DDABBC97297C6BE1002F559C /* NoteTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDABBC95297C6BE1002F559C /* NoteTableViewCell.xib */; };
+		DDABBC99297C7544002F559C /* NoteScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDABBC98297C7544002F559C /* NoteScreenViewModel.swift */; };
+		DDABBC9B297C756F002F559C /* NoteScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDABBC9A297C756F002F559C /* NoteScreenViewController.swift */; };
+		DDABBC9D297C78B8002F559C /* NoteDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDABBC9C297C78B8002F559C /* NoteDetailModel.swift */; };
 		DDAFA7F0297BF7830011D319 /* FavoriteScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAFA7EF297BF7830011D319 /* FavoriteScreenViewModel.swift */; };
 /* End PBXBuildFile section */
 
@@ -43,11 +52,13 @@
 		DD34486A297727EA00177CD4 /* SearchScreenTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchScreenTableViewCell.swift; sourceTree = "<group>"; };
 		DD34486B297727EA00177CD4 /* SearchScreenTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchScreenTableViewCell.xib; sourceTree = "<group>"; };
 		DD34486E2977464100177CD4 /* NoteDetailScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteDetailScreenViewController.swift; sourceTree = "<group>"; };
+		DD3A5693297FF99500163C63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DD3A5694297FFA3900163C63 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		DD3A5696297FFA3B00163C63 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Main.strings; sourceTree = "<group>"; };
 		DD4AC004297301260002FDA1 /* IGDb.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IGDb.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD4AC007297301260002FDA1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DD4AC009297301260002FDA1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		DD4AC00B297301260002FDA1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		DD4AC00E297301260002FDA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DD4AC011297301260002FDA1 /* IGDb.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = IGDb.xcdatamodel; sourceTree = "<group>"; };
 		DD4AC013297301270002FDA1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DD4AC016297301270002FDA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -64,7 +75,17 @@
 		DD4AC05729746F990002FDA1 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		DD6809102979D7E70019D76D /* FavoriteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteTableViewCell.swift; sourceTree = "<group>"; };
 		DD6809112979D7E70019D76D /* FavoriteTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoriteTableViewCell.xib; sourceTree = "<group>"; };
-		DD8A917F29749C450020A361 /* PinterestLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinterestLayout.swift; sourceTree = "<group>"; };
+		DDA997B6297D6A40000ABDDE /* GameDetailScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDetailScreenViewController.swift; sourceTree = "<group>"; };
+		DDA997B8297DA4EF000ABDDE /* NoteDetailScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteDetailScreenViewModel.swift; sourceTree = "<group>"; };
+		DDA997BE297F3B35000ABDDE /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		DDABBC8E297BFD43002F559C /* FavoriteScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteScreenViewController.swift; sourceTree = "<group>"; };
+		DDABBC90297C1F86002F559C /* LocalDataBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalDataBase.swift; sourceTree = "<group>"; };
+		DDABBC92297C6A1C002F559C /* GameDetailScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDetailScreenViewModel.swift; sourceTree = "<group>"; };
+		DDABBC94297C6BE1002F559C /* NoteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteTableViewCell.swift; sourceTree = "<group>"; };
+		DDABBC95297C6BE1002F559C /* NoteTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NoteTableViewCell.xib; sourceTree = "<group>"; };
+		DDABBC98297C7544002F559C /* NoteScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteScreenViewModel.swift; sourceTree = "<group>"; };
+		DDABBC9A297C756F002F559C /* NoteScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteScreenViewController.swift; sourceTree = "<group>"; };
+		DDABBC9C297C78B8002F559C /* NoteDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteDetailModel.swift; sourceTree = "<group>"; };
 		DDAFA7EF297BF7830011D319 /* FavoriteScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteScreenViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -138,6 +159,7 @@
 				DD4AC04B297445910002FDA1 /* Network.swift */,
 				DD4AC05529745D300002FDA1 /* AlertWidget.swift */,
 				DD4AC05729746F990002FDA1 /* Settings.swift */,
+				DDABBC90297C1F86002F559C /* LocalDataBase.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -157,7 +179,6 @@
 		DD4AC020297302390002FDA1 /* HomeScreen */ = {
 			isa = PBXGroup;
 			children = (
-				DD8A917E29749C2B0020A361 /* Layouts */,
 				DD4AC028297306180002FDA1 /* ViewController */,
 				DD4AC027297304830002FDA1 /* ViewModel */,
 				DD4AC026297304770002FDA1 /* View */,
@@ -250,6 +271,7 @@
 		DD4AC029297306410002FDA1 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				DDABBC9C297C78B8002F559C /* NoteDetailModel.swift */,
 			);
 			name = Model;
 			path = "Öodel";
@@ -258,6 +280,7 @@
 		DD4AC02A297306500002FDA1 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				DDA997B8297DA4EF000ABDDE /* NoteDetailScreenViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -280,6 +303,7 @@
 		DD4AC02D297306720002FDA1 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				DDA997B6297D6A40000ABDDE /* GameDetailScreenViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -287,6 +311,7 @@
 		DD4AC02E297306810002FDA1 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				DDABBC92297C6A1C002F559C /* GameDetailScreenViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -309,6 +334,7 @@
 		DD4AC031297306980002FDA1 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				DDABBC9A297C756F002F559C /* NoteScreenViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -316,6 +342,7 @@
 		DD4AC032297306A10002FDA1 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				DDABBC98297C7544002F559C /* NoteScreenViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -323,6 +350,8 @@
 		DD4AC033297306A90002FDA1 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				DDABBC94297C6BE1002F559C /* NoteTableViewCell.swift */,
+				DDABBC95297C6BE1002F559C /* NoteTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -337,6 +366,7 @@
 		DD4AC035297306B80002FDA1 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				DDABBC8E297BFD43002F559C /* FavoriteScreenViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -344,6 +374,7 @@
 		DD4AC036297306C30002FDA1 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				DDAFA7EF297BF7830011D319 /* FavoriteScreenViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -360,17 +391,8 @@
 		DD4AC038297306D60002FDA1 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				DDAFA7EF297BF7830011D319 /* FavoriteScreenViewModel.swift */,
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		DD8A917E29749C2B0020A361 /* Layouts */ = {
-			isa = PBXGroup;
-			children = (
-				DD8A917F29749C450020A361 /* PinterestLayout.swift */,
-			);
-			path = Layouts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -417,6 +439,8 @@
 			knownRegions = (
 				en,
 				Base,
+				tr,
+				"en-GB",
 			);
 			mainGroup = DD4ABFFB297301260002FDA1;
 			productRefGroup = DD4AC005297301260002FDA1 /* Products */;
@@ -433,6 +457,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDABBC97297C6BE1002F559C /* NoteTableViewCell.xib in Resources */,
 				DD4AC017297301270002FDA1 /* LaunchScreen.storyboard in Resources */,
 				DD4AC014297301270002FDA1 /* Assets.xcassets in Resources */,
 				DD4AC04A297369CC0002FDA1 /* HomeScreenCollectionViewCell.xib in Resources */,
@@ -494,22 +519,30 @@
 				DD4AC05429745B9F0002FDA1 /* HomeScreenViewModel.swift in Sources */,
 				DD4AC00C297301260002FDA1 /* ViewController.swift in Sources */,
 				DDAFA7F0297BF7830011D319 /* FavoriteScreenViewModel.swift in Sources */,
+				DDABBC91297C1F86002F559C /* LocalDataBase.swift in Sources */,
 				DD4AC05829746F990002FDA1 /* Settings.swift in Sources */,
 				DD34486C297727EA00177CD4 /* SearchScreenTableViewCell.swift in Sources */,
+				DDABBC9D297C78B8002F559C /* NoteDetailModel.swift in Sources */,
 				DD4AC008297301260002FDA1 /* AppDelegate.swift in Sources */,
 				DD4AC00A297301260002FDA1 /* SceneDelegate.swift in Sources */,
 				DD4AC05629745D300002FDA1 /* AlertWidget.swift in Sources */,
 				DD4AC0502974463D0002FDA1 /* DetailModel.swift in Sources */,
+				DDA997B9297DA4EF000ABDDE /* NoteDetailScreenViewModel.swift in Sources */,
 				DD344869297724BC00177CD4 /* SearchScreenViewController.swift in Sources */,
+				DDABBC9B297C756F002F559C /* NoteScreenViewController.swift in Sources */,
 				DD34486F2977464100177CD4 /* NoteDetailScreenViewController.swift in Sources */,
 				DD4AC012297301260002FDA1 /* IGDb.xcdatamodeld in Sources */,
+				DDABBC8F297BFD43002F559C /* FavoriteScreenViewController.swift in Sources */,
+				DDABBC99297C7544002F559C /* NoteScreenViewModel.swift in Sources */,
+				DDABBC96297C6BE1002F559C /* NoteTableViewCell.swift in Sources */,
 				DD4AC04E297445E80002FDA1 /* APIModel.swift in Sources */,
 				DD4AC046297365DB0002FDA1 /* HomeScreenViewController.swift in Sources */,
 				DD6809122979D7E70019D76D /* FavoriteTableViewCell.swift in Sources */,
-				DD8A918029749C450020A361 /* PinterestLayout.swift in Sources */,
 				DD4AC04C297445910002FDA1 /* Network.swift in Sources */,
+				DDA997B7297D6A40000ABDDE /* GameDetailScreenViewController.swift in Sources */,
 				DD4AC0522974477D0002FDA1 /* ModelResponse.swift in Sources */,
 				DD4AC049297369CC0002FDA1 /* HomeScreenCollectionViewCell.swift in Sources */,
+				DDABBC93297C6A1C002F559C /* GameDetailScreenViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -519,7 +552,9 @@
 		DD4AC00D297301260002FDA1 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				DD4AC00E297301260002FDA1 /* Base */,
+				DD3A5693297FF99500163C63 /* Base */,
+				DD3A5694297FFA3900163C63 /* en */,
+				DD3A5696297FFA3B00163C63 /* tr */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -528,6 +563,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				DD4AC016297301270002FDA1 /* Base */,
+				DDA997BE297F3B35000ABDDE /* tr */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -539,6 +575,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -599,6 +636,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";

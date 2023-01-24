@@ -1,0 +1,75 @@
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "3MB-4C-PEc"; */
+"3MB-4C-PEc.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Sonuç yok"; ObjectID = "3qF-QI-KMR"; */
+"3qF-QI-KMR.text" = "Sonuç yok";
+
+/* Class = "UINavigationItem"; title = "Notes"; ObjectID = "BSn-tK-SQL"; */
+"BSn-tK-SQL.title" = "Notlar";
+
+/* Class = "UILabel"; text = "game name"; ObjectID = "Eaq-nn-HK9"; */
+"Eaq-nn-HK9.text" = "game name";
+
+/* Class = "UIButton"; configuration.title = "Cancel"; ObjectID = "HJi-yP-VYU"; */
+"HJi-yP-VYU.configuration.title" = "İptal";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "HJi-yP-VYU"; */
+"HJi-yP-VYU.normalTitle" = "Button";
+
+/* Class = "UITextView"; text = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda."; ObjectID = "I9B-0C-PxG"; */
+"I9B-0C-PxG.text" = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.";
+
+/* Class = "UISegmentedControl"; MDx-uR-geH.segmentTitles[0] = "All"; ObjectID = "MDx-uR-geH"; */
+"MDx-uR-geH.segmentTitles[0]" = "Hepsi";
+
+/* Class = "UISegmentedControl"; MDx-uR-geH.segmentTitles[1] = "Popular"; ObjectID = "MDx-uR-geH"; */
+"MDx-uR-geH.segmentTitles[1]" = "Popüler";
+
+/* Class = "UISegmentedControl"; MDx-uR-geH.segmentTitles[2] = "New Release"; ObjectID = "MDx-uR-geH"; */
+"MDx-uR-geH.segmentTitles[2]" = "Yeni Çıkan";
+
+/* Class = "UITabBarItem"; title = "Favoriler"; ObjectID = "NPd-WN-9aS"; */
+"NPd-WN-9aS.title" = "Favoriler";
+
+/* Class = "UILabel"; text = "date"; ObjectID = "Ofh-4g-6RC"; */
+"Ofh-4g-6RC.text" = "date";
+
+/* Class = "UILabel"; text = "rate"; ObjectID = "PzW-RG-Rwi"; */
+"PzW-RG-Rwi.text" = "-";
+
+/* Class = "UITabBarItem"; title = "Notlar"; ObjectID = "QF8-dE-EIm"; */
+"QF8-dE-EIm.title" = "Notlar";
+
+/* Class = "UILabel"; text = "developer"; ObjectID = "Sba-VY-XFW"; */
+"Sba-VY-XFW.text" = "developer";
+
+/* Class = "UIButton"; configuration.title = "oyunu seçme"; ObjectID = "YPL-97-PjM"; */
+"YPL-97-PjM.configuration.title" = "Oyunu Seç";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "YPL-97-PjM"; */
+"YPL-97-PjM.normalTitle" = "Button";
+
+/* Class = "UITabBarItem"; title = "Arama"; ObjectID = "ZPY-dY-Muz"; */
+"ZPY-dY-Muz.title" = "Arama";
+
+/* Class = "UIButton"; configuration.title = "Save"; ObjectID = "caB-eY-gHG"; */
+"caB-eY-gHG.configuration.title" = "Kaydet";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "caB-eY-gHG"; */
+"caB-eY-gHG.normalTitle" = "Button";
+
+/* Class = "UITextView"; text = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda."; ObjectID = "d9F-WF-MLN"; */
+"d9F-WF-MLN.text" = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.";
+
+/* Class = "UINavigationItem"; title = "Favorites"; ObjectID = "hxe-Hi-pcN"; */
+"hxe-Hi-pcN.title" = "Favoriler";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "nZv-SP-LLf"; */
+"nZv-SP-LLf.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "ps1-7v-Fwo"; */
+"ps1-7v-Fwo.normalTitle" = "Button";
+
+/* Class = "UITextField"; text = "note title"; ObjectID = "sGb-LM-cZ1"; */
+"sGb-LM-cZ1.text" = "note title";
